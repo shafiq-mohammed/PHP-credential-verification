@@ -1,4 +1,13 @@
 <?php
+/*My PHP script that is based on the two-factor verification security principle. 
+Once the user logs in, their cellphone is texted by my program by utilizing Twilio's 3rd party API. 
+Once the login takes place, if the password works, then the user is redirected to another page where 
+the user inputs the pin number that was texted to their phone."
+@author: Shafiq Mohammed
+*/
+?>
+
+<?php
 	ob_start();
 	
 	// Step 1. Create a database connection
@@ -92,7 +101,7 @@
 			else{
 			//Redirect to credentials page
 
-			header("Location: ". "");
+			header("Location: ". "verifying-credentials.php");
 			}
 		}
 	}
